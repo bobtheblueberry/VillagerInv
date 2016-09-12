@@ -1,0 +1,10 @@
+name: NPC-Inventory
+version: 0.1
+main: com.btbb.villageinv.NPCInvPlugin
+author: Serge Humphrey
+description: Open NPC Villager's Inventory
+depends:
+commands:
+    npcinv:
+        usage: /<enable|disable>
+        permission: npcinv.use
