@@ -35,6 +35,7 @@ public class NPCEventHandler implements Listener {
 			return;
 		Villager v = (Villager) ent;
 		for (ItemStack is : v.getInventory().getContents())
+			if (is != null)
 			v.getWorld().dropItemNaturally(v.getLocation(), is);
 	}
 
