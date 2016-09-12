@@ -118,7 +118,7 @@ public class NPCEventHandler implements Listener {
 	public void onCose(InventoryCloseEvent evt) {
 		if (evt.getPlayer() == null)
 			return;
-		plugin.invMap.remove(evt.getPlayer());
+		plugin.invMap.remove(evt.getPlayer().getUniqueId());
 	}
 
 	private class InvUpdater implements Runnable {
