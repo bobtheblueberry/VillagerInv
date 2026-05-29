@@ -1,0 +1,27 @@
+name: VillagerInv
+version: 1.0.0
+main: com.bobtheblueberry.villager_inv.VillagerInvPlugin
+author: [ Serge Humphrey, Whitescan ]
+description: Open Villager Inventories
+api-version: 1.21
+
+commands:
+  villagerinv:
+    usage: /<command>
+    permission: villagerinv.use
+    aliases: [ npcinv ]
+    description: Toggle the villager inventory open mode
+
+permissions:
+  villagerinv.all:
+    children:
+      - villagerinv.use
+      - villagerinv.edit
+    default: op
+    description: Allows users to both use the /villagerinv command and to edit villager inventories
+  villagerinv.use:
+    default: op
+    description: Allows users to use the /villagerinv command
+  villagerinv.edit:
+    default: op
+    description: Allows users to edit a villagers inventory

@@ -1,0 +1,5 @@
+# Language tag used to pick a messages_<tag>.properties file (falls back to English).
+language: en
+
+# When true, villagers drop everything in their inventory upon death.
+villager-drop-inventory-on-death: false
